@@ -11,7 +11,6 @@ body {
 
 main {
     background-color: #ededed;
-    padding: 50px 0;
 }
 .logo {
     display: flex;
@@ -84,4 +83,20 @@ p{
 .footer-wrapper {
     text-align: center;
     margin-top: 100px;
+}
+
+.button-wrapper {
+    text-align: center;
+
+}
+.button-wrapper button {
+    padding: 20px 60px;
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-wrapper button:hover {
+    background-color: #0083fd;
 }
