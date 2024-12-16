@@ -44,3 +44,4 @@ const numbers = [1, 2, 3, 4, 5];
 const result = transform(numbers, square);
 
 console.log(result); // 출력: [1, 4, 9, 16, 25]
+
