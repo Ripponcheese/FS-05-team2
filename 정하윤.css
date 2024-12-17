@@ -27,6 +27,10 @@ body {
   padding: 0 20px;
 }
 
+#space {
+  cursor: pointer; /*편지 이모티콘에 마우스 올리면 커서 모양 변경되게 설정해보았습니다.*/
+}
+
 .section {
   display: flex;
   justify-content: space-between;
@@ -70,7 +74,17 @@ body {
 
 .value a img {
   width : 50%;
+  cursor: pointer;   /*이미지 및 노래 제목에 마우스 올리면 커서 모양 변경되게 설정해보았습니다.*/
 }
+ 
+#fav-music {
+  cursor: pointer;  /*노래 제목에도 마우스 올리면 커서 모양 변경되게 설정해보았습니다. html div 위치 수정하여 노래 제목 클릭하면 링크로 넘어가도록 수정했습니다.*/
+  font-family: 'orbit', serif; 
+  text-decoration:none;
+  color: rgba(0, 0, 0, 0.761);
+  font-weight: lighter;
+}
+
 
 .btnchangemode {
   width: 100%;
