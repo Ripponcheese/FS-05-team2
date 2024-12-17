@@ -46,10 +46,8 @@ console.log(`Area1: ${area1}, Area2: ${area2}, Area3: ${area3}`);
 
 //5. f번째 피보나치 수열을 출력하는 함수를 작성해보세요.
 
-let f = 5;
+function fibonacci(f) {}
 
-function fibonacci(f) {
-  let n;
+let n = fibonacci(f);
 
-  console.log(`${f}번째 피보나치 수열은 ${n}입니다.`);
-}
+console.log(`${f}번째 피보나치 수열은 ${n}입니다.`);
