@@ -1,6 +1,6 @@
-//HI
-
-const acButton = document.querySelector('#acbutton');
+// 객체 클래스명 변수 추가
+const acButton = document.querySelector(".acbutton"); // 클래스 선택자로 수정, html에서 class명임
+const contentButton = document.querySelector(".content-button");
 
 const profileContent = document.querySelector(".profile");
 const coreContent = document.querySelector(".core-attributes");
@@ -11,74 +11,65 @@ const dashboard = document.querySelector(".dashboard");
 
 const accessContent = document.querySelector(".access-denied");
 
+// visible, hidden 반복하는 content요소들의 배열
+const contents = [
+  profileContent,
+  coreContent,
+  currentContent,
+  preferContent,
+  behavioralContent,
+];
 
-document.querySelector('#profile').addEventListener('click', () => {
-    profileContent.style.display = "none";
-    coreContent.style.display = "none";
-    currentContent.style.display = "none";
-    preferContent.style.display = "none";
-    behavioralContent.style.display = "none";
-    dashboard.style.display = "none";
+// [button id, visible component]
+const asideButtons = [
+  ["#profile-button", profileContent],
+  ["#core-button", coreContent],
+  ["#current-button", currentContent],
+  ["#prefer-button", preferContent],
+  ["#behavioral-button", behavioralContent],
+];
 
-    profileContent.style.display = "block";
+// 클래스명을 지우는 함수
+const removeClassList = (element, className) => {
+  if (element.classList.contains(className)) {
+    element.classList.remove(className);
+  }
+};
+// 클래스명을 추가하는 함수
+const addClassList = (element, className) => {
+  element.classList.add(className);
+};
+
+// aside-button 클릭시 컴포넌트가 스위칭되는 함수
+const switchComponent = (visibleEl) => {
+  dashboard.classList.add("hidden"); // dashboard 숨기기
+
+  // content 모두 숨기기
+  contents.forEach((contentEl) => {
+    // contentEl에 visible 있는 경우 visible 클래스명 삭제후 hidden
+    removeClassList(contentEl, "visible");
+    addClassList(contentEl, "hidden");
+  });
+
+  // visibleEl에 hidden class가 있는 경우 hidden 클래스명 삭제후 visible
+  removeClassList(visibleEl, "hidden");
+  // visible content만 보이게 하기
+  addClassList(visibleEl, "visible");
+};
+
+asideButtons.forEach(([buttonId, visibleEl]) => {
+  const button = document
+    .querySelector(buttonId)
+    .addEventListener("click", () => switchComponent(visibleEl));
 });
 
-document.querySelector('#core').addEventListener('click', () => {
-    profileContent.style.display = "none";
-    coreContent.style.display = "none";
-    currentContent.style.display = "none";
-    preferContent.style.display = "none";
-    behavioralContent.style.display = "none";
-    dashboard.style.display = "none";
-
-    coreContent.style.display = "block";
+// 객체 클래스명 변수명으로 수정
+contentButton.addEventListener("click", () => {
+  // 'visible' 클래스를 추가
+  addClassList(accessContent, "visible");
 });
 
-
-document.querySelector('#current').addEventListener('click', () => {
-    profileContent.style.display = "none";
-    coreContent.style.display = "none";
-    currentContent.style.display = "none";
-    preferContent.style.display = "none";
-    behavioralContent.style.display = "none";
-    dashboard.style.display = "none";
-
-    currentContent.style.display = "block";
+acButton.addEventListener("click", () => {
+  // 'visible' 클래스를 제거
+  removeClassList(accessContent, "visible");
 });
-
-
-document.querySelector('#prefer').addEventListener('click', () => {
-    profileContent.style.display = "none";
-    coreContent.style.display = "none";
-    currentContent.style.display = "none";
-    preferContent.style.display = "none";
-    behavioralContent.style.display = "none";
-    dashboard.style.display = "none";
-
-    preferContent.style.display = "block";
-});
-
-
-document.querySelector('#behavioral').addEventListener('click', () => {
-    profileContent.style.display = "none";
-    coreContent.style.display = "none";
-    currentContent.style.display = "none";
-    preferContent.style.display = "none";
-    behavioralContent.style.display = "none";
-    dashboard.style.display = "none";
-
-    behavioralContent.style.display = "block";
-
-});
-
-
-
-
-
-document.querySelector('.content-button').addEventListener('click', () => {
-    accessContent.style.display = "block";
-})
-
-document.querySelector('.acbutton').addEventListener('click', () => {
-    accessContent.style.display = "none";
-})
