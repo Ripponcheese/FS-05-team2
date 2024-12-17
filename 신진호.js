@@ -63,8 +63,13 @@ asideButtons.forEach(([buttonId, visibleEl]) => {
     .addEventListener("click", () => switchComponent(visibleEl));
 });
 
-// 객체 클래스명 변수 추가
-contentButton.addEventListener("click", () =>
-  addClassList(accessContent, "visible")
-);
-acButton.addEventListener("click", () => addClassList(accessContent, "hidden"));
+// 객체 클래스명 변수명으로 수정
+contentButton.addEventListener("click", () => {
+  // 'visible' 클래스를 추가
+  addClassList(accessContent, "visible");
+});
+
+acButton.addEventListener("click", () => {
+  // 'visible' 클래스를 제거
+  removeClassList(accessContent, "visible");
+});

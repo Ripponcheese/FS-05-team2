@@ -232,6 +232,7 @@ hr {
 }
 
 .access-denied {
+  display: none;
   position: absolute;
   top: 30%;
   left: 30%;
