@@ -1,5 +1,3 @@
-
-
 let btn = document.querySelector("#myInsta");
 
 function openInsta() {
