@@ -30,6 +30,8 @@ header h1 {
 
 .main-wrapper div {
     padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .hi {
@@ -43,7 +45,6 @@ header h1 {
 
 .number {
     font-size: 30px;
-    font-style: italic;
     display: inline-block;
 }
 
@@ -54,4 +55,12 @@ header h1 {
 
 xmp {
     display: inline;
+}
+
+.v-line {
+    border-left : 3px solid black;
+    height : 6500px;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
 }
