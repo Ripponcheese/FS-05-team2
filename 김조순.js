@@ -14,6 +14,9 @@ myName.addEventListener("click", (e) => {
     main.style.color = colors[a];
     i++;
     a--;
+    if(i == a){
+      a = 4;
+    }
   } else {
     i = 0;
     a = 6;
