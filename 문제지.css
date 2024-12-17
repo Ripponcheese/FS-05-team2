@@ -1,0 +1,57 @@
+body {
+    background-color: #e9e9e9;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header h6 {
+    margin-top: 60px;
+    font-size: 1.5rem;
+}
+header h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13, 500px);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 3px solid black;
+}
+
+.main-wrapper div {
+    padding-right: 40px;
+}
+
+.hi {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.number {
+    font-size: 30px;
+    font-style: italic;
+    display: inline-block;
+}
+
+.main-wrapper p {
+    display: inline-block;
+    font-size: 20px;
+}
+
+xmp {
+    display: inline;
+}
