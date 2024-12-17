@@ -94,7 +94,7 @@ const shortDescription = `
 const longDescription = `
 안녕하세요, Tony입니다.<br>
 날 더 자세히 알고 싶나? 응큼해<br><br>
-<strong>나이:</strong> 21세<br>
+<strong>나이:</strong> 20세<br>
 <strong>취미:</strong> 혼술, 알리오 올리오 탐방, 평양냉면집 순례<br>
 <strong>지역:</strong> 대한민국 서울 강남 삼성동<br>
 <strong>레벨:</strong> 백엔드 좋아함ㅋ 토니 퍼거슨 좋아함 ㅋ 어탐 좋아함ㅋ<br>
