@@ -9,8 +9,8 @@ console.log(result2);
 console.log(result3);
 
 
--> 각 변수(result1, result2, result3)는 어떤 값을 가지며, 그 이유는 무엇인가?
-
+// -> 각 변수(result1, result2, result3)는 어떤 값을 가지며, 그 이유는 무엇인가?
+//
 
 
 //문제 2
@@ -30,15 +30,15 @@ function test() {
 }
 
 test();
-
--> (1), (2), (3), (4) 출력 결과는 각각 무엇인가?
+//
+// -> (1), (2), (3), (4) 출력 결과는 각각 무엇인가?
 
 
 
 //문제 3
 
-아래 calculate 함수는 두 숫자와 콜백 함수를 받아, 콜백 함수를 사용해 계산 결과를 반환한다.
-더하기, 곱하기 기능을 가진 콜백 함수 argument1, argument2 를 작성해보시오.
+// 아래 calculate 함수는 두 숫자와 콜백 함수를 받아, 콜백 함수를 사용해 계산 결과를 반환한다.
+// 더하기, 곱하기 기능을 가진 콜백 함수 argument1, argument2 를 작성해보시오.
 
 function calculate(a, b, callback) {
   return callback(a, b);
@@ -49,7 +49,7 @@ console.log(calculate(3, 4, grgument2));
 
 //문제 4
 
-아래 conditionalCalculate 함수는 두 수와 콜백 함수를 받아 특정 조건을 만족할떄만 함수를 실행한다.
+//아래 conditionalCalculate 함수는 두 수와 콜백 함수를 받아 특정 조건을 만족할떄만 함수를 실행한다.
 
 function conditionalCalculate(a, b, conditionCallback, operationCallback)
 
@@ -60,7 +60,7 @@ function conditionalCalculate(a, b, conditionCallback, operationCallback)
 
 //문제 5
 
-아래 transform함수는 배열과 콜백 함수를 입력으로 받아, 배열의 각 요소에 콜백 함수를 적용한 새로운 배열을 반환합니다.
+// 아래 transform함수는 배열과 콜백 함수를 입력으로 받아, 배열의 각 요소에 콜백 함수를 적용한 새로운 배열을 반환합니다.
 
 function transform(array, callback)
 
