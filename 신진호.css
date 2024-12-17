@@ -261,3 +261,11 @@ hr {
   background-color: #aaaaaa;
   color: #000000;
 }
+
+/* hidden class 추가 */
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
