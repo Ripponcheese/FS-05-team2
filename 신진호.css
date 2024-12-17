@@ -5,6 +5,7 @@
     border-radius: 3px;
 }
 
+
 body {
     -webkit-user-select:none;
     -moz-user-select:none;
@@ -125,9 +126,10 @@ footer {
     background-color: #000000;
     border: 1px solid #aaaaaa;
     color: #aaaaaa;
-    font-size: 16px;
+    font-size: 20px; /*메뉴 자체도 좀더 눈의 띄게 키웠습니다.*/
     font-weight: 700;
     text-align: left;
+    text-shadow: 0px 0px 10px #ffffff;
     padding-left: 30px;
     margin-top: 20px;
 }
