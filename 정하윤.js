@@ -68,7 +68,7 @@ spaceButton.addEventListener("click", setSpaceMode)
 
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
-  alert('좌클릭 금지');
+  alert('우클릭 금지'); /*좌클릭 금지 -> 우클릭 금지로 변경하였습니다^^ */
 })
 
 const firstSection = document.querySelector(".firstsection")
