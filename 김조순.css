@@ -40,3 +40,18 @@ h2 {
   font-size: 24px;
   cursor: pointer;
 }
+
+.fav-music img {
+  width: 560px;
+  height: auto;
+}
+.fav-music a {
+  padding-left: 170px;
+  text-decoration: none;  /* 밑줄 제거 */
+  color: black;  /* 기본 글씨 색상 검정 */
+}
+
+.fav-music a:hover {
+  color: cadetblue;;  /* hover 시 글씨 색상 하얀색으로 */
+}
+
