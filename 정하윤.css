@@ -27,6 +27,9 @@ body {
   padding: 0 20px;
 }
 
+#space {
+  cursor: pointer;
+}
 .section {
   display: flex;
   justify-content: space-between;
@@ -40,6 +43,7 @@ body {
 }
 
 .section:hover {
+  cursor: pointer;
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
