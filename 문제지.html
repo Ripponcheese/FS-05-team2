@@ -22,13 +22,13 @@
     <div class="main-wrapper">
         <div><h5 class="number">1.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/최유리]</p>
-            <xmp>
+            <pre><code>
 
                 function mathAge(number){
 
 
                 }
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>1-1. 나이를 계산해주는 mathAge함수를 만드시오. [3점]</p>
@@ -39,7 +39,7 @@
         </div>
         <div><h5 class="number">2.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/정하윤]</p>
-            <xmp>
+            <pre><code>
                 const result1 = null || (0 && "Falsy") || "Taejin";
                 const result2 = (true && "Codeit") || (false && "Ignored") || 42;
                 const result3 = "Hello" && (undefined || "World") && 0;
@@ -47,14 +47,14 @@
                 console.log(result1);
                 console.log(result2);
                 console.log(result3);
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>각 변수(result1, result2, result3)는 어떤 값을 가지며, 그 이유는 무엇인가? [3점]</p>
         </div>
         <div><h5 class="number">3.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/정하윤]</p>
-            <xmp>
+            <pre><code>
                 function test() {
                 var x = 10;
 
@@ -70,21 +70,21 @@
                 }
 
                 test();
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>(1), (2), (3), (4) 출력 결과는 각각 무엇인가? [3점]</p>
         </div>
         <div><h5 class="number">4.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/정하윤]</p>
-            <xmp>
+            <pre><code>
                 function calculate(a, b, callback) {
                 return callback(a, b);
                 }
                 -> 출력
                 console.log(calculate(3, 4, argument1));
                 console.log(calculate(3, 4, grgument2));
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>위 calculate 함수는 두 숫자와 콜백 함수를 받아, 콜백 함수를 사용해 계산 결과를 반환한다.</p>
@@ -92,13 +92,13 @@
         </div>
         <div><h5 class="number">5.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/정하윤]</p>
-            <xmp>
+            <pre><code>
 
                 //아래 conditionalCalculate 함수는 두 수와 콜백 함수를 받아 특정 조건을 만족할떄만 함수를 실행한다.
 
                 function conditionalCalculate(a, b, conditionCallback, operationCallback)
 
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>두 수의 합이 10보다 클 때만 곱셈 콜백 함수를 실행한다.</p>
@@ -106,13 +106,13 @@
         </div>
         <div><h5 class="number">6.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/정하윤]</p>
-            <xmp>
+            <pre><code>
 
                 // 아래 transform함수는 배열과 콜백 함수를 입력으로 받아, 배열의 각 요소에 콜백 함수를 적용한 새로운 배열을 반환합니다.
 
                 function transform(array, callback)
 
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>주어진 조건을 완성하세요.</p>
@@ -122,7 +122,7 @@
         </div>
         <div><h5 class="number">7.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/신진호]</p>
-            <xmp>
+            <pre><code>
 
                 var a = 1;
 
@@ -139,14 +139,14 @@
                 test();
                 console.log("4:", a);
 
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>어떻게 출력되는가? [1점]</p>
         </div>
         <div><h5 class="number">8.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/신진호]</p>
-            <xmp>
+            <pre><code>
 
                 let x = 5;
 
@@ -163,14 +163,14 @@
                 scopeTest();
                 console.log("3:", x);
 
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>어떻게 출력되는가? [1점]</p>
         </div>
         <div><h5 class="number">9.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/신진호]</p>
-            <xmp>
+            <pre><code>
 
                 var y = 10;
 
@@ -189,12 +189,12 @@
                 second();
                 console.log("4:", y);
 
-            </xmp>
+            </code></pre>
             <p>어떻게 출력되는가? [1점]</p>
         </div>
         <div><h5 class="number">10.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/신진호]</p>
-            <xmp>
+            <pre><code>
 
                 let globalVar = "Global";
 
@@ -214,12 +214,12 @@
 
                 outerFunction();
 
-            </xmp>
+            </code></pre>
             <p>어떻게 출력되는가? [1점]</p>
         </div>
         <div><h5 class="number">11.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/신진호]</p>
-            <xmp>
+            <pre><code>
 
                 function hoistExample() {
                 console.log("1:", a);
@@ -235,12 +235,12 @@
 
                 hoistExample();
 
-            </xmp>
+            </code></pre>
             <p>어떻게 출력되는가? [1점]</p>
         </div>
         <div><h5 class="number">12.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/김조순]</p>
-            <xmp>
+            <pre><code>
 
                 const selectArry = [
                 { name: "김조순", gender: "male", value: 57 },
@@ -257,7 +257,7 @@
                 { name: "박춘식", gender: "female", value: 43 },
                 ];
 
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>1. 위의 selectArry 에서 원본 배열을 그대로 두고 성별이 남자인 배열과 여자인 배열을 만들어라.</p>
@@ -268,7 +268,7 @@
         </div>
         <div><h5 class="number">13.</h5>
             <p>다음 코드의 출력값과 자료형을 적어보세요. [출제자/최수빈]</p>
-            <xmp>
+            <pre><code>
 
                 let x = 0;
                 let y = 1;
@@ -282,11 +282,11 @@
                 console.log(typeof x);
                 console.log(typeof Boolean(y));
 
-            </xmp>
+            </code></pre>
         </div>
         <div><h5 class="number">14.</h5>
             <p>탬플릿 문자열을 활용하여 '1999년생은 2024년에 25살입니다.'를 출력해보세요. [출제자/최수빈]</p>
-            <xmp>
+            <pre><code>
 
                 let birth_year = 1999; //태어난 년도
                 let year = 2024; //올해 년도
@@ -297,11 +297,11 @@
 
                 console.log(); //탬플릿 문자열을 이용하여 간단하게 작성해보세요.
 
-            </xmp>
+            </code></pre>
         </div>
         <div><h5 class="number">15.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/최수빈]</p>
-            <xmp>
+            <pre><code>
 
                 let Array = [3, 19, 156, 33, 100];
 
@@ -310,14 +310,14 @@
                 //짝수이면 Even, 홀수라면 Odd로 반환하세요.
                 }
 
-            </xmp>
+            </code></pre>
             <br>
             <br>
             <p>배열 값이 짝수인지 홀수인지 확인하는 함수를 작성하여, 결과를 resultArray 배열로 반환하여 출력하세요.</p>
         </div>
         <div><h5 class="number">16.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/최수빈]</p>
-            <xmp>
+            <pre><code>
 
                 function calculateTriangleArea() {}
 
@@ -327,12 +327,12 @@
 
                 console.log(`Area1: ${area1}, Area2: ${area2}, Area3: ${area3}`);
 
-            </xmp>
+            </code></pre>
             <p>삼각형의 넓이를 계산하는 함수 calculateTriangleArea() 함수를 만들어보세요.</p>
         </div>
         <div><h5 class="number">17.</h5>
             <p>다음 [보기]를 읽고 물음에 답하시오. [출제자/최수빈]</p>
-            <xmp>
+            <pre><code>
 
                 function fibonacci(f) {}
 
@@ -340,7 +340,7 @@
 
                 console.log(`${f}번째 피보나치 수열은 ${n}입니다.`);
 
-            </xmp>
+            </code></pre>
             <p>f번째 피보나치 수열을 출력하는 함수를 작성해보세요.</p>
         </div>
     </div>
