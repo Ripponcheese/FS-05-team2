@@ -20,7 +20,7 @@ header h1 {
 .main-wrapper {
     display: grid;
     grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
-    grid-template-rows: repeat(13, 700px);
+    grid-template-rows: repeat(9, 800px);
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 30px;
@@ -59,7 +59,7 @@ xmp {
 
 .v-line {
     border-left : 3px solid black;
-    height : 6500px;
+    height : 6700px;
     z-index: 999;
     position: absolute;
     left: 50%;
